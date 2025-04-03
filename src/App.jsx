@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -7,20 +7,34 @@ import FAQ from "./pages/FAQ";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 
+const Layout = () => {
+	return (
+		<>
+			<Header />
+			<Outlet />
+		</>
+	);
+};
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Layout />,
+		children: [
+			{ path: "/", element: <Home /> },
+			{ path: "/about", element: <About /> },
+			{ path: "/contact", element: <Contact /> },
+			{ path: "/faq", element: <FAQ /> },
+			{ path: "/signup", element: <Signup /> },
+			{ path: "/login", element: <Login /> },
+		],
+	},
+]);
+
 function App() {
 	return (
 		<>
-			<Router>
-				<Header />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/faq" element={<FAQ />} />
-					<Route path="/signup" element={<Signup />} />
-					<Route path="/login" element={<Login />} />
-				</Routes>
-			</Router>
+			<RouterProvider router={router} />
 		</>
 	);
 }
