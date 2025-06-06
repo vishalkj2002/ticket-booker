@@ -6,6 +6,7 @@ import Login from "../pages/Login"
 import Signup from "../pages/Signup"
 
 import { Routes, Route} from "react-router-dom"
+import NotFound from "../pages/NotFound"
 
 const Router = () => {
   return (
@@ -17,6 +18,7 @@ const Router = () => {
 		<Route path="/faq" element={<FAQ />} />
 		<Route path="/login" element={<Login />} />
 		<Route path="/signup" element={<Signup />} />
+		<Route path="*" element={<NotFound/>} />
 	</Routes>
   )
 }

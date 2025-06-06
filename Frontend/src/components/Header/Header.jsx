@@ -31,7 +31,7 @@ const Header = () => {
 					</nav>
 
 					<div className="ml-auto flex space-x-10 text-[20px] text-white">
-						<Link to="/signup" className="hover:text-gray-300 px-4 py-2">
+						<Link to="/signup" className=" hover:text-gray-300 px-4 py-2">
 							Sign Up
 						</Link>
 						<Link
