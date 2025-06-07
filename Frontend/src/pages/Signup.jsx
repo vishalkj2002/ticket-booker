@@ -98,7 +98,7 @@ const Signup = () => {
 
         {/* Submit Button */}
         <button
-          className="w-full py-2 bg-red-400 text-white font-medium rounded-md hover:bg-red-600 transition"
+          className="w-full py-2 bg-red-500 text-white font-medium rounded-md hover:bg-red-600 transition"
           disabled={!agree}
         >
           Create account
