@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const TermsOfUse = () => {
-  return (
-    <div>TermsOfUse Page</div>
-  )
-}
+	return <div>Terms Of Use Page</div>;
+};
 
-export default TermsOfUse
+export default TermsOfUse;

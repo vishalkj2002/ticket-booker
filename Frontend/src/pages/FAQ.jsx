@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const FAQ = () => {
-  return (
-	<div>
-	  This is faq page.
-	</div>
-  )
-}
+	return <div>This is faq page.</div>;
+};
 
-export default FAQ
+export default FAQ;

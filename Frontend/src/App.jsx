@@ -40,7 +40,7 @@
 // }
 
 // export default App;
-import "./App.css";
+
 import Layout from "./layout/Layout";
 
 function App() {
