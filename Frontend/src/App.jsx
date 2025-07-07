@@ -43,8 +43,8 @@
 
 import Layout from "./layout/Layout";
 
-function App() {
+const App = () => {
 	return <Layout />;
-}
+};
 
 export default App;
